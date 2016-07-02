@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{MM/dd HH:mm:ss,SSS}[%-.2t]%-5p(%F:%L)%m%n" />
+		</layout>
+	</appender>
+	<category name="org.springframework.jdbc.core.JdbcTemplate">
+		<priority value="debug" />
+	</category>
+	<category name="org.springframework">
+		<priority value="info" />
+	</category>
+	<root>
+		<priority value="debug" />
+		<appender-ref ref="STDOUT" />
+	</root>
+	
+</log4j:configuration>
