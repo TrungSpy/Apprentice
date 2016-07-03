@@ -3,3 +3,14 @@ Concept: We plan to use the cloud to store and analyze large quantity of data to
 
 環境構築
 sengineフォルダの内容をEclipseのプロジェクトとしてインポートする。
+
+
+システム構成
+
+サーバ：　PostgreSql + Java(Spring,Jetty)
+
+クライアント：　ブラウザ(JavaScript, ExtJS, GoogleMapAPI, TogetherJS), ISO(Swift)
+
+
+
+
