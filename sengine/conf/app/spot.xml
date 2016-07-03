@@ -13,21 +13,22 @@
 
 	<bean id="spot-data" class="svc.ListData">
 		<property name="sql"><value><![CDATA[
-select spot_id, name, description, country, city, area, attach, latitude, longitude
+select m_spot_id, name, description, country, city, area, attach, latitude, longitude
 from m_spot
-order by spot_id
+order by m_spot_id
 		]]></value></property>
 	</bean>
 	
 	<bean id="spot-delete" class="svc.Delete">
-		<property name="talbe"		value="m_spot"/>
+		<property name="sql"><value><![CDATA[
+delete from m_spot where spot_id = :deleteKey
+		]]></value></property>
 	</bean>
 	
-	<bean id="spot-insert" class="svc.Delete">
-		<property name="talbe"		value="m_spot"/>
+	<bean id="spot-insert" class="svc.Insert">
+		<property name="table"			value="m_spot"/>
 	</bean>
 	
-	<bean id="spot-update" class="svc.Delete">
-		<property name="talbe"		value="m_spot"/>
-	</bean>
+	
+	
 </beans>

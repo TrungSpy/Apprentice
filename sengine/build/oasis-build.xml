@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<project name="oasis" default="default">
+    <!-- properties -->
+	<property name="top"				value="../../"/>
+	<property name="classes.dir"		value="${top}/sengine/bin/"/>
+	<property name="sengine.jar"		value="sengine.jar"/>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+	<target name="default" depends="clear,make-jar-file" description="jar maker">
+		<echo>done.</echo>
+	</target>
+	
+	<target name="clear">
+		<delete file="${sengine.jar}"/>
+	</target>
+	
+	<target name="make-jar-file">
+		<jar destfile="${sengine.jar}">
+			<fileset dir="${classes.dir}">
+				<include name="*/**"/>
+			</fileset>
+		</jar>
+	</target>
+</project>

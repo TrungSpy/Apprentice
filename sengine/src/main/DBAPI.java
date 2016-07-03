@@ -38,7 +38,7 @@ public class DBAPI {
 		return npJdbcTemplate.update(sql, paramMap);
 	}
 	
-	public int insert(String table, String versionCol, JSONObject data) throws Exception {
+	public int insert(String table, JSONObject data) throws Exception {
 		SimpleJdbcInsert insert = new SimpleJdbcInsert(this.jdbcTemplate).withTableName(table);
 		Map<String, Object> dataMap = makeDataMap(table, data);
 		return insert.execute(dataMap);

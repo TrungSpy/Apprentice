@@ -1,6 +1,6 @@
 package svc;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 import main.Start;
@@ -11,25 +11,24 @@ import servlet.Service;
 
 public class Delete implements Service{
 	
-	private String talbe = null;
+	private String sql = null;
 	
 	public @Override String doIt(JSONObject arg) throws Exception {
 		JSONObject param = arg.getJSONObject("param");
-		@SuppressWarnings("unchecked")
-		Map<String, Object> dataMap = arg.getJSONObject("deleteParam").getMap();
-		System.out.println("delete from " + talbe + Start.DB.whereStr(new ArrayList<String>(dataMap.keySet())));
-		Start.DB.update("delete from " + talbe + Start.DB.whereStr(new ArrayList<String>(dataMap.keySet())), dataMap);
+		Integer deleteKey = param.getInt("deleteKey");
+		Map<String, Object> pmap = new HashMap<String, Object>();
+		pmap.put("deleteKey", deleteKey);
+		Start.DB.update(sql,  pmap);
 		return new JSONObject().put("success", "OK").toString();
 	}
 	
+	public String getSql() {
+		return sql;
+	}
+
+	public void setSql(String sql) {
+		this.sql = sql;
+	}
+
 	
-
-	public String getTalbe() {
-		return talbe;
-	}
-
-	public void setTalbe(String talbe) {
-		this.talbe = talbe;
-	}
-
 }

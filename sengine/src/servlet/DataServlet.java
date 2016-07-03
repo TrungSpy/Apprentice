@@ -52,7 +52,7 @@ public class DataServlet extends HttpServlet {
 			logger.info("return---------------");
 			logger.info(rtnVal);
 			logger.info("-----------------------------------------------------------------");
-			
+			response.setHeader("Access-Control-Allow-Origin", "*");
 			response.setHeader("cache-control", "no-cache");
 			writer = new PrintWriter(new OutputStreamWriter( response.getOutputStream(), "UTF-8" ));
 			writer.write(rtnVal);
