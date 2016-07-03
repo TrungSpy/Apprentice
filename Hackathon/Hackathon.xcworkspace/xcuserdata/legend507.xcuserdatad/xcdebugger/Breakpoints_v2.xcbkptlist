@@ -10,12 +10,184 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Hackathon/DetailViewController.swift"
-            timestampString = "489147067.781338"
+            timestampString = "489213157.455091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "loadView()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hackathon/DetailViewController.swift"
+            timestampString = "489201005.36045"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "Spots"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hackathon.DetailViewController.marker.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.GMSMarker&gt;"
+                  moduleName = "Hackathon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/legend507/Documents/Projects/Hackathon/Hackathon/DetailViewController.swift"
+                  timestampString = "489201005.429258"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hackathon.DetailViewController.marker.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.GMSMarker&gt;"
+                  moduleName = "Hackathon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/legend507/Documents/Projects/Hackathon/Hackathon/DetailViewController.swift"
+                  timestampString = "489201005.43113"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hackathon.DetailViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Hackathon.DetailViewController"
+                  moduleName = "Hackathon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/legend507/Documents/Projects/Hackathon/Hackathon/DetailViewController.swift"
+                  timestampString = "489201005.431332"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hackathon.DetailViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Hackathon.DetailViewController&gt;"
+                  moduleName = "Hackathon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/legend507/Documents/Projects/Hackathon/Hackathon/DetailViewController.swift"
+                  timestampString = "489201005.431513"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hackathon/DetailViewController.swift"
+            timestampString = "489201008.640136"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "Spots"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hackathon.DetailViewController.place.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.GMSPlace&gt;"
+                  moduleName = "Hackathon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/legend507/Documents/Projects/Hackathon/Hackathon/DetailViewController.swift"
+                  timestampString = "489201008.66219"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hackathon.DetailViewController.place.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.GMSPlace&gt;"
+                  moduleName = "Hackathon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/legend507/Documents/Projects/Hackathon/Hackathon/DetailViewController.swift"
+                  timestampString = "489201008.662456"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hackathon.DetailViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; Hackathon.DetailViewController"
+                  moduleName = "Hackathon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/legend507/Documents/Projects/Hackathon/Hackathon/DetailViewController.swift"
+                  timestampString = "489201008.66263"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hackathon.DetailViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Hackathon.DetailViewController&gt;"
+                  moduleName = "Hackathon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/legend507/Documents/Projects/Hackathon/Hackathon/DetailViewController.swift"
+                  timestampString = "489201008.662808"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hackathon/DetailViewController.swift"
+            timestampString = "489213157.455091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "downloadButton(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9916255CE9A7DE01B3162CB732E4D99B42C02B60",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9916255CE9A7DE01B3162CB732E4D99B42C02B60" : 0,
+    "AC3E8F2597181BA4B589C9ED8980F4FD5E4C6590" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4C1AD060-C9EF-47FA-9015-0A15C1CA9EA0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9916255CE9A7DE01B3162CB732E4D99B42C02B60" : "Hackathon\/",
+    "AC3E8F2597181BA4B589C9ED8980F4FD5E4C6590" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Hackathon",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Hackathon.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/legend507\/Apprentice.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9916255CE9A7DE01B3162CB732E4D99B42C02B60"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/legend507\/Apprentice",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AC3E8F2597181BA4B589C9ED8980F4FD5E4C6590"
+    }
+  ]
+}

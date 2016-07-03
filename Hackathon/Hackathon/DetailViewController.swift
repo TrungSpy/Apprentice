@@ -10,12 +10,30 @@ import UIKit
 import MapKit
 import GoogleMaps
 
+struct Spots {
+    var id: Int
+    var name: String
+    var latitude: Double
+    var longitude: Double
+    
+    init(inputId: Int, inputName: String, inputLatitude: Double, inputLongitude: Double) {
+        id = inputId
+        name = inputName
+        latitude = inputLatitude
+        longitude = inputLongitude
+    }
+}
+
+
 class DetailViewController: UIViewController, GMSMapViewDelegate {
     var camera : GMSCameraPosition!
     var marker: GMSMarker!
     var place: GMSPlace!
     var markerView:UIImageView!
     var placesClient: GMSPlacesClient!
+    var downloadedList: [Spots] = []
+    var downloadedMarker: [GMSMarker] = []
+    var hasUpdated = 0
     
     var resultsViewController: GMSAutocompleteResultsViewController?
     var searchController: UISearchController?
@@ -87,9 +105,6 @@ class DetailViewController: UIViewController, GMSMapViewDelegate {
         marker.title = "Tokyo"
         marker.map = mapView
         
-        // http connection
-        httpJson()
-        
         // GMSPlace example
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -106,7 +121,9 @@ class DetailViewController: UIViewController, GMSMapViewDelegate {
     
     func httpJson() {
         print ("in httpJason()")
-        let url: NSURL = NSURL(string: "http://47.90.38.75/test.html")!
+        downloadedList.removeAll()
+        downloadedMarker.removeAll()
+        let url: NSURL = NSURL(string: "http://10.201.120.198/data?sid=spot-data")!
         //let url: NSURL = NSURL(string: "http://10.201.120.159/test.html")!
         let request: NSURLRequest = NSURLRequest(URL: url)
         let response: AutoreleasingUnsafeMutablePointer<NSURLResponse?>=nil
@@ -119,6 +136,32 @@ class DetailViewController: UIViewController, GMSMapViewDelegate {
             do {
                 if let jsonResult = try NSJSONSerialization.JSONObjectWithData(dataVal, options: []) as? NSDictionary {
                     print("Synchronous\(jsonResult)")
+                    
+                    if let dataList = jsonResult["dataList"] as? [[String: AnyObject]] {
+                        for data in dataList {
+                            var oneSpot = Spots(inputId: 0, inputName: "", inputLatitude: 0.0, inputLongitude: 0.0)
+                            var oneMarker: GMSMarker
+                            if let id = data["m_spot_id"] as? Int {
+                                oneSpot.id = id
+                            }
+                            if let name = data["name"] as? String {
+                                oneSpot.name = name
+                            }
+                            if let latitude = data["latitude"] as? Double {
+                                oneSpot.latitude = latitude
+                            }
+                            if let longitude = data["longitude"] as? Double {
+                                oneSpot.longitude = longitude
+                            }
+                            let position = CLLocationCoordinate2D(latitude: oneSpot.latitude, longitude: oneSpot.longitude)
+                            oneMarker = GMSMarker(position: position)
+                            oneMarker.title = oneSpot.name
+                            downloadedMarker.append(oneMarker)
+                            print(oneSpot.name)
+                            downloadedList.append(oneSpot)
+                        }
+                    }
+                    
                 }
             } catch let error as NSError {
                 print(error.localizedDescription)
@@ -129,6 +172,20 @@ class DetailViewController: UIViewController, GMSMapViewDelegate {
             print(error.localizedDescription)
         }
     }
+    
+    
+    @IBAction func downloadButton(sender: UIButton) {
+        print("download button pressed!")
+        // http connection
+        httpJson()
+        hasUpdated = 1
+        for var oneMarker in downloadedMarker {
+            if oneMarker.title != "test" {
+                oneMarker.map = mapView
+            }
+        }
+    }
+    
 }
 
 

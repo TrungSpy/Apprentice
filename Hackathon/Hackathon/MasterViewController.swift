@@ -26,10 +26,20 @@ class MasterViewController: UITableViewController {
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
     }
-
+    
+    // 'Master' button triggers this function
     override func viewWillAppear(animated: Bool) {
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.collapsed
         super.viewWillAppear(animated)
+        print("in viewWillAPpear()!")
+        
+        if detailViewController?.hasUpdated == 1 {
+            detailViewController?.hasUpdated = 0
+            
+            // add new cells to the current list
+            
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,7 +76,8 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
     }
-
+    
+    // '+' triggers this function
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         
